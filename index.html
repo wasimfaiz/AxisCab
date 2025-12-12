@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axiscab – Cab Booking Service</title>
+
+  <!-- Premium Icons (Remix Icons + Lucide) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <div class="logo">AxisCab</div>
+  <nav id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#routes">Routes</a>
+    <a href="#contact">Contact</a>
+    <a href="#" class="book-btn"><i class="ri-taxi-fill"></i> Book Now</a>
+  </nav>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="position:relative; width:100%; height:80vh; overflow:hidden;">
+  <div class="hero-slider" style="position:absolute; inset:0; z-index:-1;">
+    <img src="https://images.unsplash.com/photo-1713761525604-45384322feae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide active" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7" class="slide" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    <img src="https://images.unsplash.com/photo-1576556744958-3fc2fe151fbd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+  </div>
+
+  <div class="hero-content" style="position:relative; top:50%; transform:translateY(-50%); width:100%; text-align:center; color:#fff; text-shadow:0 2px 12px rgba(0,0,0,0.6); padding:0 20px;">
+    <h1 style="font-size:48px; font-weight:800; margin-bottom:20px;">Book Your Ride with Axis Cab</h1>
+    <p style="font-size:20px; opacity:0.9; margin-bottom:40px;">Fast • Safe • Affordable Cab Service</p>
+    <a href="#" class="hero-btn" style="padding:14px 40px; background:#ffb400; color:#000; font-size:18px; border-radius:50px; font-weight:700; display:inline-block;">Book a Cab</a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking">
+  <h2 class="booking-title">Book Your Cab</h2>
+  <form class="booking-form">
+    <div class="form-group"><label>Pickup Location</label><input type="text" placeholder="Enter pickup point" required></div>
+    <div class="form-group"><label>Drop Location</label><input type="text" placeholder="Enter drop point" required></div>
+    <div class="form-group"><label>Pickup Date</label><input type="date" required></div>
+    <div class="form-group"><label>Pickup Time</label><input type="time" required></div>
+    <div class="form-group"><label>Cab Type</label><select required><option value="">Select cab</option><option>Mini</option><option>Sedan</option><option>SUV</option><option>Traveller</option></select></div>
+    <button type="submit" class="book-submit">Confirm Booking</button>
+  </form>
+</section>
+
+<!-- POPULAR ROUTES -->
+<section class="popular-routes" id="routes">
+  <h2 class="routes-title">Popular Routes</h2>
+  <div class="routes-container">
+    <div class="route-box">
+      <img src="https://images.unsplash.com/photo-1601961405399-801fb1f34581?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pune to Mumbai">
+      <h3>Pune → Mumbai</h3>
+      <p>150 km • 3 hrs</p>
+    </div>
+    <div class="route-box">
+      <img src="https://images.unsplash.com/photo-1737347799179-40be496e5937?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pune to Lonavala">
+      <h3>Pune → Lonavala</h3>
+      <p>65 km • 1.5 hrs</p>
+    </div>
+    <div class="route-box">
+      <img src="https://images.unsplash.com/photo-1665888013405-9d4bdb9b115c?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pune to Nashik">
+      <h3>Pune → Nashik</h3>
+      <p>210 km • 4 hrs</p>
+    </div>
+    <div class="route-box">
+      <img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pune to Goa">
+      <h3>Pune → Goa</h3>
+      <p>450 km • 8 hrs</p>
+    </div>
+  </div>
+  <div style="margin-top:45px;text-align:center"><a href="#" class="view-all">View All Routes →</a></div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="services-title">Our Services</h2>
+  <div class="services-container">
+    <div class="service-box"><img src="https://img.icons8.com/ios-filled/100/taxi.png" alt=""><h3>City Rides</h3><p>Quick and affordable cab rides across the city.</p></div>
+    <div class="service-box"><img src="https://img.icons8.com/ios-filled/100/airport.png" alt=""><h3>Airport Transfers</h3><p>On-time airport pickup & drop with professional drivers.</p></div>
+    <div class="service-box"><img src="https://img.icons8.com/ios-filled/100/route.png" alt=""><h3>Outstation Trips</h3><p>Comfortable long-distance cab services at best prices.</p></div>
+    <div class="service-box"><img src="https://img.icons8.com/ios-filled/100/speed.png" alt=""><h3>Luxury Rides</h3><p>Premium cabs for a luxurious travel experience.</p></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose" id="why">
+  <h2 class="why-title">Why Choose Us</h2>
+  <div class="why-container">
+    <div class="why-box"><img src="https://img.icons8.com/ios-filled/100/clock.png" alt=""><h3>24/7 Service</h3><p>We are available round the clock.</p></div>
+    <div class="why-box"><img src="https://img.icons8.com/ios-filled/100/shield.png" alt=""><h3>Safety First</h3><p>Professional drivers & secure rides.</p></div>
+    <div class="why-box"><img src="https://img.icons8.com/ios-filled/100/dollar.png" alt=""><h3>Affordable Pricing</h3><p>Best prices for all travel needs.</p></div>
+    <div class="why-box"><img src="https://img.icons8.com/ios-filled/100/car.png" alt=""><h3>Wide Fleet</h3><p>Choose from a variety of cars.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <h2 class="testimonials-title">What Our Customers Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-box"><img src="https://i.pravatar.cc/120?img=1" alt=""><p>"AxisCab made my airport transfer super easy and hassle-free!"</p><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><h4>- Ravi Patil.</h4></div>
+    <div class="testimonial-box"><img src="https://i.pravatar.cc/120?img=2" alt=""><p>"The outstation ride was comfortable and safe. Excellent service."</p><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><h4>- Sakir A.</h4></div>
+    <div class="testimonial-box"><img src="https://i.pravatar.cc/120?img=3" alt=""><p>"Quick city rides with professional drivers. Loved the experience!"</p><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><h4>- Zahid.</h4></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#0d0d0d; color:#fff; padding:60px 20px; border-top:3px solid #ffcc00;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between;">
+    <div style="flex:1; min-width:250px;">
+      <h2 style="font-size:26px; font-weight:700; margin-bottom:15px; color:#ffcc00;">AxisCab</h2>
+      <p style="line-height:1.6; opacity:0.8;">Fast, Safe & Affordable Cab Service. Your comfort is our priority.</p>
+      <div style="margin-top:20px; display:flex; gap:15px;">
+        <i class="ri-facebook-circle-fill" style="font-size:28px; cursor:pointer;"></i>
+        <i class="ri-instagram-fill" style="font-size:28px; cursor:pointer;"></i>
+        <i class="ri-twitter-x-fill" style="font-size:28px; cursor:pointer;"></i>
+        <i class="ri-linkedin-box-fill" style="font-size:28px; cursor:pointer;"></i>
+      </div>
+    </div>
+
+    <div style="flex:1; min-width:200px;">
+      <h3 style="font-size:20px; margin-bottom:15px; color:#ffcc00;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; line-height:1.8; opacity:0.9;">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Popular Routes</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <div style="flex:1; min-width:250px;">
+      <h3 style="font-size:20px; margin-bottom:15px; color:#ffcc00;">Contact Info</h3>
+      <p style="margin:6px 0; opacity:0.9;"><i class="ri-map-pin-line"></i> Pune, Maharashtra</p>
+      <p style="margin:6px 0; opacity:0.9;"><i class="ri-phone-fill"></i> +91 98765 43210</p>
+      <p style="margin:6px 0; opacity:0.9;"><i class="ri-mail-fill"></i> support@axiscab.com</p>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid #333; opacity:0.7;">
+    © 2025 AxisCab | All Rights Reserved | Developed by Wasim Faiz
+  </div>
+</footer>
+
+<!-- COUNTERS -->
+<section class="counters">
+  <div class="counter-box"><h2 class="counter" data-target="50000">0</h2><p>Rides Completed</p></div>
+  <div class="counter-box"><h2 class="counter" data-target="1200">0</h2><p>Happy Customers</p></div>
+  <div class="counter-box"><h2 class="counter" data-target="250">0</h2><p>Active Drivers</p></div>
+  <div class="counter-box"><h2 class="counter" data-target="98">0</h2><p>City Coverage (%)</p></div>
+</section>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-btns"><a href="https://wa.me/919876543210" class="float-btn whatsapp-btn"><i class="ri-whatsapp-line"></i></a><a href="tel:+919876543210" class="float-btn call-btn"><i class="ri-phone-fill"></i></a></div>
+
+
+<!-- SCRIPTS -->
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', ()=> navMenu.classList.toggle('show'));
+
+  // Slider
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
+  setInterval(()=>{
+    slides.forEach(s=>s.classList.remove('active'));
+    slides[index].classList.add('active');
+    index = (index+1)%slides.length;
+  },3000);
+
+  // Booking form
+  document.querySelector('.booking-form').addEventListener('submit', e=>{ e.preventDefault(); alert('Booking submitted!'); });
+
+  // Counters
+  const counters = document.querySelectorAll('.counter');
+  const speed = 80;
+  const animateCounters = ()=>{
+    counters.forEach(counter=>{
+      const update = ()=>{
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target/speed;
+        if(count < target){ counter.innerText = Math.ceil(count + inc); setTimeout(update,20); } else { counter.innerText = target; }
+      };
+      update();
+    });
+  };
+  const obs = new IntersectionObserver(entries=>{ entries.forEach(en=>{ if(en.isIntersecting) animateCounters(); }); },{threshold:0.4});
+  obs.observe(document.querySelector('.counters'));
+
+  // Lucide icons
+  lucide.createIcons();
+</script>
+</body>
+</html>
